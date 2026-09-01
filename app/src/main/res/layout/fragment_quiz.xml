@@ -50,7 +50,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Test Your Legal Awareness"
-                        android:textColor="?attr/onPrimaryContainer"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -60,7 +60,7 @@
                         android:layout_marginTop="4dp"
                         android:gravity="center"
                         android:text="Interactive offline questions on Indian laws, police rights, traffic regulations, and citizen safety."
-                        android:textColor="?attr/onPrimaryContainer"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:textSize="13sp" />
 
                 </LinearLayout>
@@ -78,7 +78,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnStartAllQuiz"
-                style="@style/Widget.Material3.Button.FilledButton"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:layout_marginTop="12dp"

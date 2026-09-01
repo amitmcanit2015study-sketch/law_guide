@@ -27,7 +27,7 @@ public class PdfPrintHelper {
                     PrintAttributes attributes = new PrintAttributes.Builder()
                         .setMediaSize(PrintAttributes.MediaSize.ISO_A4)
                         .setResolution(new PrintAttributes.Resolution("pdf", "pdf", 300, 300))
-                        .setMinMargins(PrintAttributes.Margins.NARROW)
+                        .setMinMargins(PrintAttributes.Margins.NO_MARGINS)
                         .build();
                     printManager.print(jobName, printAdapter, attributes);
                 }

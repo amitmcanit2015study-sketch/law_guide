@@ -140,7 +140,7 @@
                 <!-- Action Button -->
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnNextQuestion"
-                    style="@style/Widget.Material3.Button.FilledButton"
+                    style="@style/Widget.Material3.Button"
                     android:layout_width="match_parent"
                     android:layout_height="54dp"
                     android:layout_marginTop="16dp"
@@ -202,7 +202,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRestartQuiz"
-                style="@style/Widget.Material3.Button.FilledButton"
+                style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:layout_marginTop="32dp"

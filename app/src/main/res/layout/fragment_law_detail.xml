@@ -200,7 +200,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/label_summary"
-                        android:textColor="?attr/onPrimaryContainer"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
@@ -210,7 +210,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:lineSpacingExtra="2sp"
-                        android:textColor="?attr/onPrimaryContainer"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:textSize="14sp"
                         tools:text="You can file an FIR at any police station regardless of territorial jurisdiction." />
                 </LinearLayout>
@@ -428,7 +428,7 @@
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnDetailDial"
-                        style="@style/Widget.Material3.Button.FilledButton"
+                        style="@style/Widget.Material3.Button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/btn_call"

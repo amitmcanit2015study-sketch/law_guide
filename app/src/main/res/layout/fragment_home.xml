@@ -157,7 +157,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/daily_law_title"
-                            android:textColor="?attr/onPrimaryContainer"
+                            android:textColor="?attr/colorOnPrimaryContainer"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -182,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Zero FIR and Right to Free Copy"
-                        android:textColor="?attr/onPrimaryContainer"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
@@ -194,7 +194,7 @@
                         android:ellipsize="end"
                         android:maxLines="2"
                         android:text="You can file an FIR at any police station regardless of jurisdiction without fees."
-                        android:textColor="?attr/onPrimaryContainer"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:textSize="13sp" />
 
                     <TextView

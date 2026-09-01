@@ -25,6 +25,7 @@ public class EmergencyEntity implements Serializable {
     public EmergencyEntity() {
     }
 
+    @androidx.room.Ignore
     public EmergencyEntity(long id, String name, String number, String description) {
         this.id = id;
         this.name = name;

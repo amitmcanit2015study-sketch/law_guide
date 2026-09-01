@@ -37,6 +37,7 @@ public class QuizEntity implements Serializable {
     public QuizEntity() {
     }
 
+    @androidx.room.Ignore
     public QuizEntity(long id, String question, String option1, String option2, String option3, String option4, int answer, String category) {
         this.id = id;
         this.question = question;
