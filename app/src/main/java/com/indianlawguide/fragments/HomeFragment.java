@@ -99,6 +99,16 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        // Language Switcher Toggle
+        boolean isHindi = com.indianlawguide.utils.LocaleHelper.isHindi(requireContext());
+        binding.btnLanguageToggle.setText(isHindi ? "English" : "हिंदी");
+        binding.btnLanguageToggle.setOnClickListener(v -> {
+            if (getActivity() != null) {
+                String targetLang = com.indianlawguide.utils.LocaleHelper.isHindi(requireContext()) ? "en" : "hi";
+                com.indianlawguide.utils.LocaleHelper.setLocale(getActivity(), targetLang);
+            }
+        });
+
         // 3-Dots Overflow Menu (About)
         binding.btnHomeMore.setOnClickListener(v -> {
             androidx.appcompat.widget.PopupMenu popup = new androidx.appcompat.widget.PopupMenu(requireContext(), binding.btnHomeMore);

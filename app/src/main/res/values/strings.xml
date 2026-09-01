@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Law Guide</string>
+    <string name="app_header_subtitle">by Amit Bharat</string>
     <string name="tagline">Know Your Rights • Offline Legal Guide for Every Indian</string>
     <string name="splash_developed_by">Developed by Amit Bharat</string>
+    <string name="tap_to_read_more">Tap to read full law details →</string>
+    <string name="daily_law_tag">Law of the Day</string>
+    <string name="category_laws_title">%s Laws</string>
+    <string name="no_laws_found">No laws found in this category</string>
+    <string name="law_summary_header">Summary</string>
+    <string name="law_detail_header">Detailed Legal Provisions</string>
+    <string name="law_remedies_header">Your Rights &amp; Remedies</string>
+    <string name="law_steps_header">What Steps to Take?</string>
+    <string name="law_punishment_header">Sections &amp; Penalties</string>
+    <string name="law_notes_header">My Personal Notes</string>
+    <string name="action_bookmark">Bookmark</string>
+    <string name="action_unbookmark">Remove Bookmark</string>
+    <string name="action_read_aloud">Read Aloud (TTS)</string>
+    <string name="action_stop_tts">Stop</string>
+    <string name="action_share">Share</string>
+    <string name="action_print_pdf">Generate PDF</string>
+    <string name="action_add_note">Add Note</string>
+    <string name="note_hint">Write your personal note about this law…</string>
+    <string name="btn_save_note">Save Note</string>
+    <string name="call_now">Call Now</string>
+    <string name="emergency_note">In an emergency, 112 is the single all-India emergency response number.</string>
+    <string name="no_favorites">No bookmarks found yet. Tap the bookmark icon on any law to save it here.</string>
+    <string name="quiz_start">Start Quiz</string>
+    <string name="quiz_submit">Submit</string>
+    <string name="search_no_results">No matching laws found</string>
+    <string name="setting_font_size">Font Size</string>
     
     <!-- Disclaimer -->
     <string name="disclaimer_title">Legal Disclaimer</string>

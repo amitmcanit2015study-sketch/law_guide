@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">लॉ गाइड</string>
+    <string name="app_header_subtitle">द्वारा अमित भारत</string>
+    <string name="tagline">अपने अधिकार जानें • हर भारतीय के लिए ऑफलाइन कानूनी गाइड</string>
+    <string name="splash_developed_by">अमित भारत द्वारा विकसित</string>
+    
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">कानूनी अस्वीकरण</string>
+    <string name="disclaimer_body_1">यह एप्लिकेशन भारतीय नागरिकों के लिए सामान्य कानूनी जागरूकता के उद्देश्य से बनाया गया है।</string>
+    <string name="disclaimer_body_2">यहाँ दी गई जानकारी को औपचारिक कानूनी सलाह न मानें। कानून समय-समय पर बदल सकते हैं।</string>
+    <string name="disclaimer_body_3">विशिष्ट कानूनी मामलों के लिए हमेशा किसी योग्य वकील या अपने जिला विधिक सेवा प्राधिकरण (DLSA) से परामर्श लें।</string>
+    <string name="disclaimer_checkbox">मैं समझता हूँ और सहमत हूँ कि यह ऐप केवल जानकारी के लिए है।</string>
+    <string name="btn_continue">ऐप में आगे बढ़ें</string>
+    
+    <!-- Bottom Nav -->
+    <string name="nav_home">होम</string>
+    <string name="nav_emergency">इमरजेंसी</string>
+    <string name="nav_favorites">सहेजे गए</string>
+    <string name="nav_notes">नोट्स</string>
+    <string name="nav_settings">सेटिंग्स</string>
+
+    <!-- Dashboard -->
+    <string name="search_hint">अधिकार, कानून, धाराएं, सजाएं खोजें…</string>
+    <string name="daily_law_title">दैनिक कानूनी जानकारी</string>
+    <string name="explore_categories">कानूनी श्रेणियां</string>
+    <string name="quick_access">त्वरित उपकरण</string>
+    <string name="tool_quiz">कानूनी प्रश्नोत्तरी (Quiz)</string>
+    <string name="tool_faqs">सामान्य प्रश्न (FAQ)</string>
+    <string name="tool_history">हाल का इतिहास</string>
+    <string name="tool_emergency">हेल्पलाइन</string>
+    <string name="tap_to_read_more">विस्तार से पढ़ने के लिए टैप करें →</string>
+    <string name="daily_law_tag">आज का कानून</string>
+
+    <!-- Category Laws -->
+    <string name="category_laws_title">%s के कानून</string>
+    <string name="no_laws_found">इस श्रेणी में कोई कानून नहीं मिला</string>
+
+    <!-- Law Detail -->
+    <string name="law_summary_header">सारांश</string>
+    <string name="law_detail_header">विस्तृत कानूनी प्रावधान</string>
+    <string name="law_remedies_header">आपके अधिकार और कानूनी उपचार</string>
+    <string name="law_steps_header">क्या कदम उठाएं?</string>
+    <string name="law_punishment_header">लागू धाराएं और दंड</string>
+    <string name="law_notes_header">मेरे व्यक्तिगत नोट्स</string>
+    <string name="action_bookmark">बुकमार्क करें</string>
+    <string name="action_unbookmark">बुकमार्क हटाएं</string>
+    <string name="action_read_aloud">सुनें (TTS)</string>
+    <string name="action_stop_tts">रोकें</string>
+    <string name="action_share">साझा करें</string>
+    <string name="action_print_pdf">पीडीएफ बनाएं</string>
+    <string name="action_add_note">नोट जोड़ें</string>
+    <string name="note_hint">इस कानून के बारे में अपना निजी नोट लिखें…</string>
+    <string name="btn_save_note">नोट सहेजें</string>
+
+    <!-- Emergency Directory -->
+    <string name="emergency_title">आपातकालीन हेल्पलाइन</string>
+    <string name="call_now">अभी कॉल करें</string>
+    <string name="emergency_note">आपातकाल में 112 राष्ट्रीय आपातकालीन नंबर है।</string>
+
+    <!-- Favorites & Bookmarks -->
+    <string name="favorites_title">सहेजे गए कानून</string>
+    <string name="no_favorites">कोई बुकमार्क नहीं मिला। स्टार या बुकमार्क आइकन दबाकर सहेजें।</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">कानूनी जागरूकता प्रश्नोत्तरी</string>
+    <string name="quiz_start">प्रश्नोत्तरी शुरू करें</string>
+    <string name="quiz_next">अगला प्रश्न</string>
+    <string name="quiz_submit">समाप्त करें</string>
+    <string name="quiz_score">आपका स्कोर: %1$d / %2$d</string>
+
+    <!-- Search -->
+    <string name="search_title">खोजें</string>
+    <string name="search_no_results">कोई कानून नहीं मिला</string>
+
+    <!-- Settings & About -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="setting_theme">ऐप थीम</string>
+    <string name="setting_font_size">फ़ॉन्ट आकार</string>
+    <string name="setting_about">ऐप के बारे में</string>
+    <string name="about_title">लॉ गाइड के बारे में</string>
+    <string name="app_version_name">v1.0.0.2 (प्रोडक्शन बिल्ड)</string>
+</resources>
