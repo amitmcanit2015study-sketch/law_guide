@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "National Emergency Number",
+    "number": "112",
+    "description": "All-in-one unified emergency number across India integrating Police, Fire, Ambulance, and Disaster management with GPS location dispatch."
+  },
+  {
+    "id": 2,
+    "name": "Police Helpline",
+    "number": "100",
+    "description": "Direct Police emergency response for reporting crimes in progress, public safety threats, theft, or urgent law and order assistance."
+  },
+  {
+    "id": 3,
+    "name": "Fire & Rescue Service",
+    "number": "101",
+    "description": "Fire brigade emergency dispatch for structural fires, industrial hazards, explosions, and immediate building rescue operations."
+  },
+  {
+    "id": 4,
+    "name": "Maternal & Child Medical Ambulance",
+    "number": "102",
+    "description": "Dedicated free government ambulance and medical transport for pregnant mothers, newborns, and pediatric emergencies (Janani Shishu Suraksha Karyakram)."
+  },
+  {
+    "id": 5,
+    "name": "Disaster & Medical Trauma Ambulance",
+    "number": "108",
+    "description": "Emergency trauma care and disaster ambulance equipped with advanced life support, oxygen, and paramedic response."
+  },
+  {
+    "id": 6,
+    "name": "Women in Distress Helpline",
+    "number": "1091",
+    "description": "Special police response line for women facing stalking, domestic threat, street harassment, or requiring emergency police protection."
+  },
+  {
+    "id": 7,
+    "name": "Childline India",
+    "number": "1098",
+    "description": "24/7 toll-free emergency response service for children in need of care and protection, rescuing child labour, abuse victims, and lost kids."
+  },
+  {
+    "id": 8,
+    "name": "National Women Helpline (WCD)",
+    "number": "181",
+    "description": "Toll-free 24-hour telecom service providing 24/7 counselling, shelter home referrals, legal aid, and One-Stop-Centre (Sakhi) support to women."
+  },
+  {
+    "id": 9,
+    "name": "National Cyber Crime Reporting Helpline",
+    "number": "1930",
+    "description": "Immediate helpline to report financial cyber fraud, UPI/OTP scams, unauthorized bank debits, and freeze stolen money in transit."
+  },
+  {
+    "id": 10,
+    "name": "National Consumer Helpline (NCH)",
+    "number": "1915",
+    "description": "Department of Consumer Affairs guidance line for registering grievances against e-commerce fraud, defective items, and deficient services."
+  },
+  {
+    "id": 11,
+    "name": "Elderline (Senior Citizen Helpline)",
+    "number": "14567",
+    "description": "National helpline for senior citizens offering emotional support, abuse rescue, legal guidance under Senior Citizens Maintenance Act, and shelter."
+  },
+  {
+    "id": 12,
+    "name": "RBI Banking Ombudsman Helpline",
+    "number": "14448",
+    "description": "Reserve Bank of India helpline for unresolved banking grievances, ATM failed reversal delays, and unlawful recovery agent harassment."
+  },
+  {
+    "id": 13,
+    "name": "Railway Passenger Helpline (RailMadad)",
+    "number": "139",
+    "description": "Integrated passenger assistance for security, medical emergency on train, coach cleanliness, and railway grievance redressal."
+  },
+  {
+    "id": 14,
+    "name": "National Highway Accident Helpline",
+    "number": "1073",
+    "description": "NHAI 24x7 emergency helpline for highway accidents, vehicle breakdown tow assistance, and route clearance on national expressways."
+  }
+]

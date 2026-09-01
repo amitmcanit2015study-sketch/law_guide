@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Indian Law Pocket Guide</string>
+    <string name="tagline">Know Your Rights • Offline Legal Guide for Every Indian</string>
+    
+    <!-- Disclaimer -->
+    <string name="disclaimer_title">Legal Disclaimer</string>
+    <string name="disclaimer_body_1">This application is created solely for general educational and legal awareness purposes for Indian citizens.</string>
+    <string name="disclaimer_body_2">The information provided should NEVER be considered formal legal advice. Laws, judicial interpretations, and statutory rules are subject to change.</string>
+    <string name="disclaimer_body_3">Always consult a qualified advocate or your local District Legal Services Authority (DLSA) for specific legal matters and litigation.</string>
+    <string name="disclaimer_checkbox">I understand and agree that this app provides educational knowledge only and is not legal counsel.</string>
+    <string name="btn_continue">Continue to App</string>
+    
+    <!-- Bottom Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_emergency">Emergency</string>
+    <string name="nav_favorites">Saved</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="search_hint">Search rights, laws, sections, punishments…</string>
+    <string name="daily_law_title">Daily Legal Insight</string>
+    <string name="explore_categories">Legal Categories</string>
+    <string name="quick_access">Quick Tools</string>
+    <string name="tool_quiz">Legal Quiz</string>
+    <string name="tool_faqs">Common FAQs</string>
+    <string name="tool_history">Recent History</string>
+    <string name="tool_emergency">Helplines</string>
+
+    <!-- Law Detail -->
+    <string name="label_summary">Overview &amp; Summary</string>
+    <string name="label_explanation">Detailed Citizen Rights</string>
+    <string name="label_important_rights">Key Legal Protections</string>
+    <string name="label_dos">What You Should Do (Do\'s)</string>
+    <string name="label_donts">What You Must Avoid (Don\'ts)</string>
+    <string name="label_relevant_law">Statutory Law &amp; Section</string>
+    <string name="label_punishment">Penalty / Legal Consequence</string>
+    <string name="label_helpline">Helpline / Emergency Direct Action</string>
+    <string name="label_related">Related Topics</string>
+    <string name="label_notes">Your Personal Notes</string>
+    <string name="add_note_hint">Write private notes or key observations for this law…</string>
+    <string name="save_note">Save Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="share_law">Share Law Information</string>
+    <string name="print_pdf">Export as PDF Document</string>
+    <string name="tts_speak">Read Aloud</string>
+    <string name="tts_stop">Stop Audio</string>
+    <string name="increase_font">Text Zoom In</string>
+    <string name="decrease_font">Text Zoom Out</string>
+    
+    <!-- Search -->
+    <string name="search_title">Search Legal Database</string>
+    <string name="voice_search_prompt">Speak your legal query (e.g. \"FIR\", \"Bail\", \"1930\")…</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="no_results">No matching legal topics found</string>
+    <string name="no_results_desc">Try searching by keyword, section, or category name.</string>
+    <string name="clear_history">Clear History</string>
+
+    <!-- Emergency Directory -->
+    <string name="emergency_title">National Emergency Helplines</string>
+    <string name="emergency_subtitle">Tap to instantly dial or copy official 24x7 citizen support numbers. 100% offline.</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_copy">Copy</string>
+    <string name="copied_to_clipboard">Copied %1$s to clipboard</string>
+
+    <!-- Quiz -->
+    <string name="quiz_title">Citizen Law Knowledge Quiz</string>
+    <string name="quiz_score">Your Score: %1$d / %2$d</string>
+    <string name="quiz_next">Next Question</string>
+    <string name="quiz_finish">View Results</string>
+    <string name="quiz_restart">Restart Quiz</string>
+    <string name="quiz_review_wrong">Review Answers</string>
+    <string name="quiz_passed">Excellent Citizen Legal Awareness!</string>
+    <string name="quiz_feedback">Keep learning your fundamental rights and protections.</string>
+
+    <!-- Notes & Saved -->
+    <string name="notes_title">My Legal Notes</string>
+    <string name="no_notes_yet">No notes saved yet.</string>
+    <string name="no_notes_desc">Tap the notes icon on any law detail page to save personal annotations.</string>
+    <string name="favorites_title">Bookmarked Topics</string>
+    <string name="no_favorites_yet">No bookmarked laws.</string>
+    <string name="no_favorites_desc">Bookmark important legal topics for one-tap quick access.</string>
+    <string name="history_title">Recently Viewed Topics</string>
+    <string name="no_history_yet">No recently viewed laws.</string>
+
+    <!-- Settings & About -->
+    <string name="settings_title">Settings &amp; Preferences</string>
+    <string name="setting_theme">App Theme</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Mode</string>
+    <string name="theme_dark">Dark Mode</string>
+    <string name="setting_text_size">Base Text Size</string>
+    <string name="setting_backup">Local Data Backup</string>
+    <string name="setting_backup_desc">Export your notes and favorites to a local JSON file</string>
+    <string name="setting_restore">Restore Data</string>
+    <string name="setting_restore_desc">Import previously exported JSON backup</string>
+    <string name="setting_clear_data">Reset App Storage</string>
+    <string name="setting_about">About &amp; Disclaimers</string>
+    <string name="about_title">About Indian Law Pocket Guide</string>
+    <string name="app_version">Version 1.0.0 (Production Build)</string>
+    <string name="app_license">Licensed under MIT License. 100% Free &amp; Open Source.</string>
+    <string name="app_data_sources">Data Sources: Constitution of India, Bharatiya Nyaya Sanhita 2023, Bharatiya Nagarik Suraksha Sanhita 2023, Bharatiya Sakshya Adhiniyam 2023, Motor Vehicles Act, Consumer Protection Act 2019, POSH Act 2013, Model Tenancy Act, and Supreme Court of India landmark judgments.</string>
+    <string name="privacy_title">Privacy Guarantee</string>
+    <string name="privacy_desc">This application collects zero personal data, tracks no telemetry, uses no internet connection, and stores all bookmarks and notes exclusively on your local device.</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors: Deep Indian Navy & Saffron Gold Accents -->
+    <color name="md_theme_light_primary">#0B3C5D</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#D2E4FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#001D36</color>
+
+    <color name="md_theme_light_secondary">#C05621</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#FFDCC2</color>
+    <color name="md_theme_light_onSecondaryContainer">#351000</color>
+
+    <color name="md_theme_light_tertiary">#1E6F5C</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#A6F2D6</color>
+    <color name="md_theme_light_onTertiaryContainer">#002117</color>
+
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+
+    <color name="md_theme_light_background">#F8F9FC</color>
+    <color name="md_theme_light_onBackground">#191C1E</color>
+    <color name="md_theme_light_surface">#FFFFFF</color>
+    <color name="md_theme_light_onSurface">#191C1E</color>
+    <color name="md_theme_light_surfaceVariant">#E0E2EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#43474E</color>
+    <color name="md_theme_light_outline">#73777F</color>
+
+    <!-- Dark Theme Palette -->
+    <color name="md_theme_dark_primary">#A0C9FF</color>
+    <color name="md_theme_dark_onPrimary">#003259</color>
+    <color name="md_theme_dark_primaryContainer">#00497E</color>
+    <color name="md_theme_dark_onPrimaryContainer">#D2E4FF</color>
+
+    <color name="md_theme_dark_secondary">#FFB68C</color>
+    <color name="md_theme_dark_onSecondary">#532200</color>
+    <color name="md_theme_dark_secondaryContainer">#753300</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFDCC2</color>
+
+    <color name="md_theme_dark_tertiary">#8AD5BA</color>
+    <color name="md_theme_dark_onTertiary">#00382B</color>
+    <color name="md_theme_dark_tertiaryContainer">#00513F</color>
+    <color name="md_theme_dark_onTertiaryContainer">#A6F2D6</color>
+
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+
+    <color name="md_theme_dark_background">#111416</color>
+    <color name="md_theme_dark_onBackground">#E1E2E5</color>
+    <color name="md_theme_dark_surface">#191C1E</color>
+    <color name="md_theme_dark_onSurface">#E1E2E5</color>
+    <color name="md_theme_dark_surfaceVariant">#43474E</color>
+    <color name="md_theme_dark_onSurfaceVariant">#C3C7D0</color>
+    <color name="md_theme_dark_outline">#8D9199</color>
+
+    <!-- Custom Category Card Accents -->
+    <color name="cat_police">#1565C0</color>
+    <color name="cat_traffic">#E65100</color>
+    <color name="cat_women">#AD1457</color>
+    <color name="cat_child">#2E7D32</color>
+    <color name="cat_property">#6A1B9A</color>
+    <color name="cat_tenant">#00838F</color>
+    <color name="cat_employment">#4E342E</color>
+    <color name="cat_consumer">#D84315</color>
+    <color name="cat_cyber">#0277BD</color>
+    <color name="cat_medical">#C2185B</color>
+    <color name="cat_banking">#283593</color>
+    <color name="cat_constitution">#B71C1C</color>
+    <color name="cat_bns">#00695C</color>
+    <color name="cat_bnss">#37474F</color>
+    <color name="cat_bsa">#4527A0</color>
+
+    <!-- Status Indicators -->
+    <color name="status_green_bg">#E8F5E9</color>
+    <color name="status_green_text">#1B5E20</color>
+    <color name="status_red_bg">#FFEBEE</color>
+    <color name="status_red_text">#B71C1C</color>
+    <color name="highlight_yellow">#FFF176</color>
+</resources>

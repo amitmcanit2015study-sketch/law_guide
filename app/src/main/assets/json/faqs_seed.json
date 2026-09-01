@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "Can a police officer refuse to register my FIR if the incident happened in another area?",
+    "answer": "No. Under Section 173 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), every police officer is duty-bound to register a 'Zero FIR' regardless of jurisdiction. If they refuse, you can send your complaint in writing to the Superintendent of Police (SP) or file a private complaint before a Judicial Magistrate."
+  },
+  {
+    "id": 2,
+    "question": "What should I do immediately if I lose money in an online UPI or OTP fraud?",
+    "answer": "Immediately call the National Cyber Crime Helpline at 1930 within the first 2 hours ('Golden Hour') and provide the transaction ID, your bank name, and the beneficiary account/UPI details. Also file an official complaint on cybercrime.gov.in and notify your bank branch in writing within 72 hours to claim zero liability under RBI guidelines."
+  },
+  {
+    "id": 3,
+    "question": "Can a traffic policeman take my car keys or force me out of my vehicle?",
+    "answer": "No. Traffic police officers have no legal authority to snatch keys from the ignition or deflate vehicle tires. Only an officer of the rank of Sub-Inspector (SI) or above is authorized to issue challans or seize documents, and digital documents presented on DigiLocker/mParivahan must be legally accepted."
+  },
+  {
+    "id": 4,
+    "question": "Can a woman be arrested after sunset or before sunrise?",
+    "answer": "Under Section 43(5) of the BNSS 2023, no woman can be arrested between sunset and sunrise. In exceptional emergency cases, the arrest must be made strictly by a female police officer after obtaining prior written permission from a Judicial Magistrate First Class."
+  },
+  {
+    "id": 5,
+    "question": "Can a hospital deny emergency treatment if I don't have money for an advance deposit?",
+    "answer": "No. As per the Supreme Court ruling in Parmanand Katara v. Union of India and Article 21 of the Constitution, every hospital (government or private) is legally bound to provide immediate emergency and trauma stabilization without insisting on advance payment or police formalities."
+  },
+  {
+    "id": 6,
+    "question": "What is the maximum time police can hold a person without presenting them to a judge?",
+    "answer": "Under Article 22(2) of the Indian Constitution and Section 58 of BNSS 2023, no person can be detained in police custody beyond 24 hours without an express order of remand from a Judicial Magistrate."
+  },
+  {
+    "id": 7,
+    "question": "Can my landlord evict me immediately or cut off electricity/water?",
+    "answer": "No. Landlords cannot take the law into their own hands. Cutting off essential services like water or electricity or forceful physical lockouts are illegal under the Model Tenancy Act and state rent laws. Landlords must follow legal eviction notice periods and obtain a court or rent tribunal decree."
+  },
+  {
+    "id": 8,
+    "question": "Who is entitled to free legal aid in India?",
+    "answer": "Under the Legal Services Authorities Act, 1987 (NALSA), all women, children, persons in custody, victims of human trafficking or disaster, SC/ST members, and persons with annual income below the state-specified threshold (usually ₹3 Lakhs) are entitled to 100% free legal representation and court fee waivers."
+  }
+]

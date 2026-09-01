@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "What is the maximum period the police can detain an arrested person before presenting them before a Magistrate?",
+    "option1": "12 hours",
+    "option2": "24 hours",
+    "option3": "48 hours",
+    "option4": "7 days",
+    "answer": 2,
+    "category": "Police Rights"
+  },
+  {
+    "id": 2,
+    "question": "Under what circumstance can a woman be arrested after sunset and before sunrise?",
+    "option1": "Whenever the police officer deems it necessary",
+    "option2": "Only by a female police officer with prior written permission of a Judicial Magistrate",
+    "option3": "If two male police officers are present",
+    "option4": "Women can never be arrested under any circumstances",
+    "answer": 2,
+    "category": "Women Rights"
+  },
+  {
+    "id": 3,
+    "question": "What is the national helpline number for reporting financial cyber fraud and freezing stolen funds?",
+    "option1": "100",
+    "option2": "1091",
+    "option3": "1930",
+    "option4": "1915",
+    "answer": 3,
+    "category": "Cyber Crime"
+  },
+  {
+    "id": 4,
+    "question": "Are digital driving licenses stored on DigiLocker legally valid when checked by traffic police?",
+    "option1": "Yes, traffic police cannot demand physical copies if shown on DigiLocker/mParivahan",
+    "option2": "No, only original physical cards are valid",
+    "option3": "Valid only during daytime",
+    "option4": "Valid only for two-wheelers",
+    "answer": 1,
+    "category": "Traffic Laws"
+  },
+  {
+    "id": 5,
+    "question": "Which new Indian criminal code replaced the Indian Penal Code (IPC 1860) on July 1, 2024?",
+    "option1": "Bharatiya Nagarik Suraksha Sanhita (BNSS)",
+    "option2": "Bharatiya Nyaya Sanhita (BNS)",
+    "option3": "Bharatiya Sakshya Adhiniyam (BSA)",
+    "option4": "National Penal Code",
+    "answer": 2,
+    "category": "Bharatiya Nyaya Sanhita"
+  },
+  {
+    "id": 6,
+    "question": "Under the Maternity Benefit Act, how many weeks of paid maternity leave is guaranteed to eligible female employees?",
+    "option1": "12 weeks",
+    "option2": "16 weeks",
+    "option3": "26 weeks",
+    "option4": "52 weeks",
+    "answer": 3,
+    "category": "Employment Laws"
+  },
+  {
+    "id": 7,
+    "question": "What is the compensation payable by banks per day for delayed auto-reversal of failed ATM/UPI transactions?",
+    "option1": "₹10 per day",
+    "option2": "₹50 per day",
+    "option3": "₹100 per day",
+    "option4": "No compensation is provided",
+    "answer": 3,
+    "category": "Banking Rights"
+  },
+  {
+    "id": 8,
+    "question": "Under the Good Samaritan Law, what protection is given to a person who helps a road accident victim?",
+    "option1": "They must pay all initial hospital expenses",
+    "option2": "They cannot be harassed, detained at hospital, or forced to disclose identity",
+    "option3": "They must remain at the police station until inquiry is complete",
+    "option4": "They must testify in court as primary witness",
+    "answer": 2,
+    "category": "Traffic Laws"
+  },
+  {
+    "id": 9,
+    "question": "Which article of the Indian Constitution is referred to as the 'Heart and Soul' of the Constitution (Right to Constitutional Remedies)?",
+    "option1": "Article 14",
+    "option2": "Article 19",
+    "option3": "Article 21",
+    "option4": "Article 32",
+    "answer": 4,
+    "category": "Constitution"
+  },
+  {
+    "id": 10,
+    "question": "What is the dedicated 24/7 emergency toll-free helpline number for children in distress (Childline)?",
+    "option1": "100",
+    "option2": "1098",
+    "option3": "1091",
+    "option4": "181",
+    "answer": 2,
+    "category": "Child Rights"
+  }
+]
