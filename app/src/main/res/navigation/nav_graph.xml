@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.indianlawguide.fragments.HomeFragment"
+        android:label="@string/nav_home">
+        <action
+            android:id="@+id/action_home_to_category"
+            app:destination="@id/nav_category_laws" />
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/nav_law_detail" />
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/nav_search" />
+        <action
+            android:id="@+id/action_home_to_quiz"
+            app:destination="@id/nav_quiz" />
+        <action
+            android:id="@+id/action_home_to_faq"
+            app:destination="@id/nav_faq" />
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/nav_history" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_emergency"
+        android:name="com.indianlawguide.fragments.EmergencyFragment"
+        android:label="@string/nav_emergency" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.indianlawguide.fragments.FavoritesFragment"
+        android:label="@string/nav_favorites">
+        <action
+            android:id="@+id/action_favorites_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.indianlawguide.fragments.NotesFragment"
+        android:label="@string/nav_notes">
+        <action
+            android:id="@+id/action_notes_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.indianlawguide.fragments.SettingsFragment"
+        android:label="@string/nav_settings">
+        <action
+            android:id="@+id/action_settings_to_about"
+            app:destination="@id/nav_about" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_category_laws"
+        android:name="com.indianlawguide.fragments.CategoryLawsFragment"
+        android:label="Category Laws">
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_category_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_law_detail"
+        android:name="com.indianlawguide.fragments.LawDetailFragment"
+        android:label="Law Detail">
+        <argument
+            android:name="lawId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_detail_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.indianlawguide.fragments.SearchFragment"
+        android:label="@string/search_title">
+        <action
+            android:id="@+id/action_search_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.indianlawguide.fragments.QuizFragment"
+        android:label="@string/quiz_title">
+        <action
+            android:id="@+id/action_quiz_to_play"
+            app:destination="@id/nav_quiz_play" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_quiz_play"
+        android:name="com.indianlawguide.fragments.QuizPlayFragment"
+        android:label="Play Quiz">
+        <argument
+            android:name="category"
+            android:defaultValue="All"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="com.indianlawguide.fragments.FaqFragment"
+        android:label="@string/tool_faqs" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.indianlawguide.fragments.HistoryFragment"
+        android:label="@string/history_title">
+        <action
+            android:id="@+id/action_history_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.indianlawguide.fragments.AboutFragment"
+        android:label="@string/setting_about" />
+
+</navigation>
