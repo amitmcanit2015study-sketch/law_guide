@@ -4,6 +4,32 @@
     <string name="app_header_subtitle">द्वारा अमित भारत</string>
     <string name="tagline">अपने अधिकार जानें • हर भारतीय के लिए ऑफलाइन कानूनी गाइड</string>
     <string name="splash_developed_by">अमित भारत द्वारा विकसित</string>
+    <string name="tap_to_read_more">पूरा विवरण पढ़ने के लिए टैप करें →</string>
+    <string name="daily_law_tag">आज का कानून</string>
+    <string name="category_laws_title">%s कानून</string>
+    <string name="no_laws_found">इस श्रेणी में कोई कानून नहीं मिला</string>
+    <string name="law_summary_header">सारांश</string>
+    <string name="law_detail_header">विस्तृत कानूनी प्रावधान</string>
+    <string name="law_remedies_header">आपके अधिकार और कानूनी उपचार</string>
+    <string name="law_steps_header">क्या कदम उठाएं?</string>
+    <string name="law_punishment_header">लागू धाराएं और दंड</string>
+    <string name="law_notes_header">मेरे व्यक्तिगत नोट्स</string>
+    <string name="action_bookmark">बुकमार्क करें</string>
+    <string name="action_unbookmark">बुकमार्क हटाएं</string>
+    <string name="action_read_aloud">सुनें (TTS)</string>
+    <string name="action_stop_tts">रोकें</string>
+    <string name="action_share">साझा करें</string>
+    <string name="action_print_pdf">पीडीएफ निर्यात करें</string>
+    <string name="action_add_note">नोट जोड़ें</string>
+    <string name="note_hint">इस कानून के बारे में अपना निजी नोट लिखें…</string>
+    <string name="btn_save_note">नोट सहेजें</string>
+    <string name="call_now">अभी कॉल करें</string>
+    <string name="emergency_note">आपातकाल में 112 अखिल भारतीय आपातकालीन नंबर है।</string>
+    <string name="no_favorites">कोई बुकमार्क नहीं मिला। किसी भी कानून पर बुकमार्क आइकन दबाकर सहेजें।</string>
+    <string name="quiz_start">प्रश्नोत्तरी शुरू करें</string>
+    <string name="quiz_submit">जमा करें</string>
+    <string name="search_no_results">कोई मेल खाने वाला कानून नहीं मिला</string>
+    <string name="setting_font_size">फ़ॉन्ट आकार</string>
     
     <!-- Disclaimer -->
     <string name="disclaimer_title">कानूनी अस्वीकरण</string>
@@ -25,59 +51,85 @@
     <string name="daily_law_title">दैनिक कानूनी जानकारी</string>
     <string name="explore_categories">कानूनी श्रेणियां</string>
     <string name="quick_access">त्वरित उपकरण</string>
-    <string name="tool_quiz">कानूनी प्रश्नोत्तरी (Quiz)</string>
+    <string name="tool_quiz">कानूनी प्रश्नोत्तरी</string>
     <string name="tool_faqs">सामान्य प्रश्न (FAQ)</string>
     <string name="tool_history">हाल का इतिहास</string>
     <string name="tool_emergency">हेल्पलाइन</string>
-    <string name="tap_to_read_more">विस्तार से पढ़ने के लिए टैप करें →</string>
-    <string name="daily_law_tag">आज का कानून</string>
-
-    <!-- Category Laws -->
-    <string name="category_laws_title">%s के कानून</string>
-    <string name="no_laws_found">इस श्रेणी में कोई कानून नहीं मिला</string>
 
     <!-- Law Detail -->
-    <string name="law_summary_header">सारांश</string>
-    <string name="law_detail_header">विस्तृत कानूनी प्रावधान</string>
-    <string name="law_remedies_header">आपके अधिकार और कानूनी उपचार</string>
-    <string name="law_steps_header">क्या कदम उठाएं?</string>
-    <string name="law_punishment_header">लागू धाराएं और दंड</string>
-    <string name="law_notes_header">मेरे व्यक्तिगत नोट्स</string>
-    <string name="action_bookmark">बुकमार्क करें</string>
-    <string name="action_unbookmark">बुकमार्क हटाएं</string>
-    <string name="action_read_aloud">सुनें (TTS)</string>
-    <string name="action_stop_tts">रोकें</string>
-    <string name="action_share">साझा करें</string>
-    <string name="action_print_pdf">पीडीएफ बनाएं</string>
-    <string name="action_add_note">नोट जोड़ें</string>
-    <string name="note_hint">इस कानून के बारे में अपना निजी नोट लिखें…</string>
-    <string name="btn_save_note">नोट सहेजें</string>
+    <string name="label_summary">अवलोकन और सारांश</string>
+    <string name="label_explanation">नागरिक अधिकार विवरण</string>
+    <string name="label_important_rights">प्रमुख कानूनी सुरक्षा</string>
+    <string name="label_dos">क्या करें (Do\'s)</string>
+    <string name="label_donts">क्या न करें (Don\'ts)</string>
+    <string name="label_relevant_law">लागू अधिनियम और धारा</string>
+    <string name="label_punishment">सजा / कानूनी परिणाम</string>
+    <string name="label_helpline">हेल्पलाइन / सीधी सहायता</string>
+    <string name="label_related">संबंधित विषय</string>
+    <string name="label_notes">आपके व्यक्तिगत नोट्स</string>
+    <string name="add_note_hint">इस कानून के बारे में निजी टिप्पणियाँ लिखें…</string>
+    <string name="save_note">नोट सहेजें</string>
+    <string name="edit_note">नोट संपादित करें</string>
+    <string name="delete_note">नोट हटाएं</string>
+    <string name="share_law">कानून की जानकारी साझा करें</string>
+    <string name="print_pdf">पीडीएफ दस्तावेज़ निर्यात करें</string>
+    <string name="tts_speak">सुनें</string>
+    <string name="tts_stop">ऑडियो रोकें</string>
+    <string name="increase_font">फ़ॉन्ट बढ़ाएं</string>
+    <string name="decrease_font">फ़ॉन्ट घटाएं</string>
+    
+    <!-- Search -->
+    <string name="search_title">कानूनी डेटाबेस खोजें</string>
+    <string name="voice_search_prompt">अपना कानूनी प्रश्न बोलें (जैसे: \"FIR\", \"जमानत\", \"1930\")…</string>
+    <string name="recent_searches">हाल की खोजें</string>
+    <string name="no_results">कोई कानूनी विषय नहीं मिला</string>
+    <string name="no_results_desc">कीवर्ड, धारा या श्रेणी के नाम से खोजें।</string>
+    <string name="clear_history">इतिहास साफ़ करें</string>
 
     <!-- Emergency Directory -->
-    <string name="emergency_title">आपातकालीन हेल्पलाइन</string>
-    <string name="call_now">अभी कॉल करें</string>
-    <string name="emergency_note">आपातकाल में 112 राष्ट्रीय आपातकालीन नंबर है।</string>
-
-    <!-- Favorites & Bookmarks -->
-    <string name="favorites_title">सहेजे गए कानून</string>
-    <string name="no_favorites">कोई बुकमार्क नहीं मिला। स्टार या बुकमार्क आइकन दबाकर सहेजें।</string>
+    <string name="emergency_title">राष्ट्रीय आपातकालीन हेल्पलाइन</string>
+    <string name="emergency_subtitle">आधिकारिक 24x7 सहायता नंबर डायल या कॉपी करें। 100% ऑफलाइन।</string>
+    <string name="btn_call">कॉल करें</string>
+    <string name="btn_copy">कॉपी करें</string>
+    <string name="copied_to_clipboard">%1$s क्लिपबोर्ड पर कॉपी किया गया</string>
 
     <!-- Quiz -->
-    <string name="quiz_title">कानूनी जागरूकता प्रश्नोत्तरी</string>
-    <string name="quiz_start">प्रश्नोत्तरी शुरू करें</string>
-    <string name="quiz_next">अगला प्रश्न</string>
-    <string name="quiz_submit">समाप्त करें</string>
+    <string name="quiz_title">नागरिक कानून ज्ञान प्रश्नोत्तरी</string>
     <string name="quiz_score">आपका स्कोर: %1$d / %2$d</string>
+    <string name="quiz_next">अगला प्रश्न</string>
+    <string name="quiz_finish">परिणाम देखें</string>
+    <string name="quiz_restart">पुनः प्रारंभ करें</string>
+    <string name="quiz_review_wrong">उत्तरों की समीक्षा करें</string>
+    <string name="quiz_passed">उत्कृष्ट कानूनी जागरूकता!</string>
+    <string name="quiz_feedback">अपने मौलिक अधिकारों और सुरक्षा के बारे में सीखते रहें।</string>
 
-    <!-- Search -->
-    <string name="search_title">खोजें</string>
-    <string name="search_no_results">कोई कानून नहीं मिला</string>
+    <!-- Notes & Saved -->
+    <string name="notes_title">मेरे कानूनी नोट्स</string>
+    <string name="no_notes_yet">कोई नोट सहेजा नहीं गया।</string>
+    <string name="no_notes_desc">व्यक्तिगत टिप्पणियां सहेजने के लिए किसी भी कानून पर नोट आइकन दबाएं।</string>
+    <string name="favorites_title">बुकमार्क किए गए कानून</string>
+    <string name="no_favorites_yet">कोई बुकमार्क नहीं मिला।</string>
+    <string name="no_favorites_desc">त्वरित पहुंच के लिए महत्वपूर्ण कानूनों को बुकमार्क करें।</string>
+    <string name="history_title">हाल ही में देखे गए विषय</string>
+    <string name="no_history_yet">हाल में देखा गया कोई कानून नहीं।</string>
 
     <!-- Settings & About -->
-    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_title">सेटिंग्स और प्राथमिकताएं</string>
     <string name="setting_theme">ऐप थीम</string>
-    <string name="setting_font_size">फ़ॉन्ट आकार</string>
-    <string name="setting_about">ऐप के बारे में</string>
+    <string name="theme_system">सिस्टम डिफ़ॉल्ट</string>
+    <string name="theme_light">लाइट मोड</string>
+    <string name="theme_dark">डार्क मोड</string>
+    <string name="setting_text_size">फ़ॉन्ट आकार</string>
+    <string name="setting_backup">लोकल डेटा बैकअप</string>
+    <string name="setting_backup_desc">अपने नोट्स और पसंदीदा को JSON फ़ाइल में निर्यात करें</string>
+    <string name="setting_restore">डेटा पुनर्स्थापित करें</string>
+    <string name="setting_restore_desc">JSON बैकअप फ़ाइल से डेटा आयात करें</string>
+    <string name="setting_clear_data">ऐप स्टोरेज रीसेट करें</string>
+    <string name="setting_about">ऐप के बारे में और अस्वीकरण</string>
     <string name="about_title">लॉ गाइड के बारे में</string>
     <string name="app_version_name">v1.0.0.2 (प्रोडक्शन बिल्ड)</string>
+    <string name="app_license">MIT लाइसेंस के तहत। 100% मुफ्त और ओपन सोर्स।</string>
+    <string name="app_data_sources">डेटा स्रोत: भारत का संविधान, भारतीय न्याय संहिता 2023, भारतीय नागरिक सुरक्षा संहिता 2023, भारतीय साक्ष्य अधिनियम 2023, मोटर वाहन अधिनियम, उपभोक्ता संरक्षण अधिनियम 2019, POSH अधिनियम 2013, और सर्वोच्च न्यायालय के ऐतिहासिक निर्णय।</string>
+    <string name="privacy_title">गोपनीयता की गारंटी</string>
+    <string name="privacy_desc">यह ऐप कोई व्यक्तिगत डेटा एकत्र नहीं करता, कोई टेलीमेट्री ट्रैक नहीं करता और सभी बुकमार्क व नोट्स आपके डिवाइस पर सुरक्षित रखता है।</string>
 </resources>

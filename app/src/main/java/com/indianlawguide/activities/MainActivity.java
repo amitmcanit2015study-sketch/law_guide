@@ -21,8 +21,14 @@ public class MainActivity extends AppCompatActivity {
     private NavController navController;
 
     @Override
+    protected void attachBaseContext(android.content.Context newBase) {
+        super.attachBaseContext(com.indianlawguide.utils.LocaleHelper.wrapContext(newBase));
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        com.indianlawguide.utils.LocaleHelper.applyAppLanguage(this);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
