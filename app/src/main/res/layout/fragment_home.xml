@@ -53,7 +53,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Offline Indian Legal Reference"
+                        android:text="by Amit Bharat"
                         android:textColor="?attr/colorOnSurfaceVariant"
                         android:textSize="11sp" />
                 </LinearLayout>
@@ -64,6 +64,7 @@
                     style="@style/Widget.Material3.Button.TonalButton"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:layout_marginEnd="6dp"
                     android:text="112 Helpline"
                     android:textColor="?attr/colorError"
                     android:textSize="12sp"
@@ -71,6 +72,16 @@
                     app:icon="@drawable/ic_emergency"
                     app:iconSize="16dp"
                     app:iconTint="?attr/colorError" />
+
+                <!-- 3-Dots Overflow Menu -->
+                <ImageButton
+                    android:id="@+id/btnHomeMore"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="More Options"
+                    android:src="@drawable/ic_more_vert"
+                    app:tint="?attr/colorOnSurface" />
 
             </LinearLayout>
 

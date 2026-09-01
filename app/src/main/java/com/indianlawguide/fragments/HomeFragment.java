@@ -99,6 +99,20 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        // 3-Dots Overflow Menu (About)
+        binding.btnHomeMore.setOnClickListener(v -> {
+            androidx.appcompat.widget.PopupMenu popup = new androidx.appcompat.widget.PopupMenu(requireContext(), binding.btnHomeMore);
+            popup.getMenuInflater().inflate(R.menu.menu_home_overflow, popup.getMenu());
+            popup.setOnMenuItemClickListener(item -> {
+                if (item.getItemId() == R.id.action_about) {
+                    Navigation.findNavController(v).navigate(R.id.nav_about);
+                    return true;
+                }
+                return false;
+            });
+            popup.show();
+        });
+
         // Quick Tool Buttons
         binding.btnQuickQuiz.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_home_to_quiz);
