@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Light Theme Palette: Royal Navy & Sapphire Blue with Emerald Accents -->
-    <color name="md_theme_light_primary">#1E40AF</color>
+    <!-- Light Theme Palette: Material 3 Indigo (Unified Across All Apps) -->
+    <color name="md_theme_light_primary">#3B50DF</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
-    <color name="md_theme_light_primaryContainer">#DBEAFE</color>
-    <color name="md_theme_light_onPrimaryContainer">#1E3A8A</color>
+    <color name="md_theme_light_primaryContainer">#DFE0FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#000B5C</color>
 
-    <color name="md_theme_light_secondary">#0284C7</color>
+    <color name="md_theme_light_secondary">#5C5D72</color>
     <color name="md_theme_light_onSecondary">#FFFFFF</color>
-    <color name="md_theme_light_secondaryContainer">#E0F2FE</color>
-    <color name="md_theme_light_onSecondaryContainer">#0369A1</color>
+    <color name="md_theme_light_secondaryContainer">#E1E0F9</color>
+    <color name="md_theme_light_onSecondaryContainer">#191A2C</color>
 
-    <color name="md_theme_light_tertiary">#0D9488</color>
+    <color name="md_theme_light_tertiary">#78536B</color>
     <color name="md_theme_light_onTertiary">#FFFFFF</color>
-    <color name="md_theme_light_tertiaryContainer">#CCFBF1</color>
-    <color name="md_theme_light_onTertiaryContainer">#115E59</color>
+    <color name="md_theme_light_tertiaryContainer">#FFD7EE</color>
+    <color name="md_theme_light_onTertiaryContainer">#2E1126</color>
 
-    <color name="md_theme_light_error">#DC2626</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
     <color name="md_theme_light_onError">#FFFFFF</color>
-    <color name="md_theme_light_errorContainer">#FEE2E2</color>
-    <color name="md_theme_light_onErrorContainer">#991B1B</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
 
-    <color name="md_theme_light_background">#F8FAFC</color>
-    <color name="md_theme_light_onBackground">#0F172A</color>
-    <color name="md_theme_light_surface">#FFFFFF</color>
-    <color name="md_theme_light_onSurface">#0F172A</color>
-    <color name="md_theme_light_surfaceVariant">#F1F5F9</color>
-    <color name="md_theme_light_onSurfaceVariant">#475569</color>
-    <color name="md_theme_light_outline">#CBD5E1</color>
+    <color name="md_theme_light_background">#FDFBFF</color>
+    <color name="md_theme_light_onBackground">#1A1B1F</color>
+    <color name="md_theme_light_surface">#FDFBFF</color>
+    <color name="md_theme_light_onSurface">#1A1B1F</color>
+    <color name="md_theme_light_surfaceVariant">#E3E1EC</color>
+    <color name="md_theme_light_onSurfaceVariant">#46464F</color>
+    <color name="md_theme_light_outline">#777680</color>
 
     <!-- Dark Theme Palette: Deep Midnight Navy & Vibrant Electric Blue -->
     <color name="md_theme_dark_primary">#3B82F6</color>

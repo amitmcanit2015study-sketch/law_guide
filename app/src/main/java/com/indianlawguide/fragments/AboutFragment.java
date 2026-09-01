@@ -57,6 +57,19 @@ public class AboutFragment extends Fragment {
 
         binding.toolbarAbout.setNavigationOnClickListener(v -> Navigation.findNavController(v).navigateUp());
 
+        // Language Switcher Toggle Group
+        boolean isHindi = com.indianlawguide.utils.LocaleHelper.isHindi(requireContext());
+        binding.toggleLanguageGroup.check(isHindi ? R.id.btnLangHindi : R.id.btnLangEnglish);
+
+        binding.toggleLanguageGroup.addOnButtonCheckedListener((group, checkedId, isChecked) -> {
+            if (isChecked && getActivity() != null) {
+                String targetLang = (checkedId == R.id.btnLangHindi) ? "hi" : "en";
+                if (!targetLang.equals(com.indianlawguide.utils.LocaleHelper.getLanguage(requireContext()))) {
+                    com.indianlawguide.utils.LocaleHelper.setLocale(getActivity(), targetLang);
+                }
+            }
+        });
+
         // 1. Share APK / App info
         binding.btnShareApp.setOnClickListener(v -> shareAppApk());
 

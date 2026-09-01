@@ -4,6 +4,10 @@
     <string name="app_header_subtitle">by Amit Bharat</string>
     <string name="tagline">Know Your Rights • Offline Legal Guide for Every Indian</string>
     <string name="splash_developed_by">Developed by Amit Bharat</string>
+    <string name="action_about">About</string>
+    <string name="about_description">Indian Law Pocket Guide is a free, ad-free legal awareness application designed for a fast, simple, and seamless experience. Easily explore, search, and understand statutory rights, citizen protections, and legal remedies with a clean interface, smooth performance, and privacy at its core.</string>
+    <string name="developed_by_full">Developed by: Amit Bharat</string>
+    <string name="company_name_full">Company: Rooys Soft Tech</string>
     <string name="tap_to_read_more">Tap to read full law details →</string>
     <string name="daily_law_tag">Law of the Day</string>
     <string name="category_laws_title">%s Laws</string>
