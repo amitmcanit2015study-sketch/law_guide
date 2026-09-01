@@ -76,23 +76,9 @@ public class AboutFragment extends Fragment {
         // 2. Download APK to Device Downloads
         binding.btnDownloadApk.setOnClickListener(v -> downloadAppApk());
 
-        // 3. View Disclaimer Dialog
-        binding.btnViewDisclaimer.setOnClickListener(v -> {
-            new AlertDialog.Builder(requireContext())
-                .setTitle(R.string.disclaimer_title)
-                .setMessage(
-                    getString(R.string.disclaimer_body_1) + "\n\n"
-                    + getString(R.string.disclaimer_body_2) + "\n\n"
-                    + getString(R.string.disclaimer_body_3) + "\n\n"
-                    + getString(R.string.app_data_sources)
-                )
-                .setPositiveButton("Understood", null)
-                .show();
-        });
-
-        // 4. Send Feedback via Email
+        // 3. Send Feedback via Email
         View.OnClickListener emailListener = v -> sendFeedbackEmail();
-        binding.btnSendFeedback.setOnClickListener(emailListener);
+        binding.btnFeedback.setOnClickListener(emailListener);
         binding.tvEmailAddress.setOnClickListener(emailListener);
     }
 

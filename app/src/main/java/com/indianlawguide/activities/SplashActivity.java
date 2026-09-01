@@ -25,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
         // Gentle fade-in animation
         Animation fadeIn = new AlphaAnimation(0.0f, 1.0f);
         fadeIn.setDuration(700);
-        binding.layoutCenterBranding.startAnimation(fadeIn);
+        binding.imgLogo.startAnimation(fadeIn);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             if (!isFinishing()) {
