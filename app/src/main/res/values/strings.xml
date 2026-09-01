@@ -100,7 +100,7 @@
     <string name="setting_clear_data">Reset App Storage</string>
     <string name="setting_about">About &amp; Disclaimers</string>
     <string name="about_title">About Indian Law Pocket Guide</string>
-    <string name="app_version">Version 1.0.0 (Production Build)</string>
+    <string name="app_version_name">v1.0.0.2 (Production Build)</string>
     <string name="app_license">Licensed under MIT License. 100% Free &amp; Open Source.</string>
     <string name="app_data_sources">Data Sources: Constitution of India, Bharatiya Nyaya Sanhita 2023, Bharatiya Nagarik Suraksha Sanhita 2023, Bharatiya Sakshya Adhiniyam 2023, Motor Vehicles Act, Consumer Protection Act 2019, POSH Act 2013, Model Tenancy Act, and Supreme Court of India landmark judgments.</string>
     <string name="privacy_title">Privacy Guarantee</string>

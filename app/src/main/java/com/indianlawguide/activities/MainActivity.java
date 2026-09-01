@@ -8,8 +8,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.navigation.NavController;
+import androidx.navigation.NavOptions;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.NavigationUI;
 
 import com.indianlawguide.R;
 import com.indianlawguide.constants.AppConstants;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (navHostFragment != null) {
             navController = navHostFragment.getNavController();
-            NavigationUI.setupWithNavController(binding.bottomNavigation, navController);
+            setupBottomNavigation();
 
             navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
                 int id = destination.getId();
@@ -47,10 +47,53 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     binding.bottomNavigation.setVisibility(View.VISIBLE);
                 }
+
+                // Sync bottom nav selection if destination matches a tab
+                if (id == R.id.nav_home || id == R.id.nav_search || id == R.id.nav_emergency || id == R.id.nav_favorites) {
+                    if (binding.bottomNavigation.getSelectedItemId() != id) {
+                        binding.bottomNavigation.getMenu().findItem(id).setChecked(true);
+                    }
+                }
             });
         }
 
         handleIncomingNotificationIntent();
+    }
+
+    private void setupBottomNavigation() {
+        binding.bottomNavigation.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (navController == null) return false;
+
+            if (itemId == R.id.nav_home) {
+                // Always pop back to home root reliably
+                navController.popBackStack(R.id.nav_home, false);
+                if (navController.getCurrentDestination() == null || navController.getCurrentDestination().getId() != R.id.nav_home) {
+                    NavOptions navOptions = new NavOptions.Builder()
+                            .setPopUpTo(R.id.nav_home, true)
+                            .setLaunchSingleTop(true)
+                            .build();
+                    navController.navigate(R.id.nav_home, null, navOptions);
+                }
+                return true;
+            } else if (itemId == R.id.nav_search || itemId == R.id.nav_emergency || itemId == R.id.nav_favorites) {
+                NavOptions navOptions = new NavOptions.Builder()
+                        .setPopUpTo(R.id.nav_home, false)
+                        .setLaunchSingleTop(true)
+                        .build();
+                navController.navigate(itemId, null, navOptions);
+                return true;
+            }
+            return false;
+        });
+
+        binding.bottomNavigation.setOnItemReselectedListener(item -> {
+            if (navController == null) return;
+            if (item.getItemId() == R.id.nav_home) {
+                // Clear any sub-screens opened on top of home
+                navController.popBackStack(R.id.nav_home, false);
+            }
+        });
     }
 
     private void handleIncomingNotificationIntent() {
