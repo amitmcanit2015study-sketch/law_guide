@@ -29,6 +29,15 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_search"
+        android:name="com.indianlawguide.fragments.SearchFragment"
+        android:label="Search">
+        <action
+            android:id="@+id/action_search_to_detail"
+            app:destination="@id/nav_law_detail" />
+    </fragment>
+
+    <fragment
         android:id="@+id/nav_emergency"
         android:name="com.indianlawguide.fragments.EmergencyFragment"
         android:label="@string/nav_emergency" />
@@ -43,22 +52,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_notes"
-        android:name="com.indianlawguide.fragments.NotesFragment"
-        android:label="@string/nav_notes">
-        <action
-            android:id="@+id/action_notes_to_detail"
-            app:destination="@id/nav_law_detail" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_settings"
-        android:name="com.indianlawguide.fragments.SettingsFragment"
-        android:label="@string/nav_settings">
-        <action
-            android:id="@+id/action_settings_to_about"
-            app:destination="@id/nav_about" />
-    </fragment>
+        android:id="@+id/nav_about"
+        android:name="com.indianlawguide.fragments.AboutFragment"
+        android:label="About" />
 
     <fragment
         android:id="@+id/nav_category_laws"
@@ -85,11 +81,11 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_search"
-        android:name="com.indianlawguide.fragments.SearchFragment"
-        android:label="@string/search_title">
+        android:id="@+id/nav_notes"
+        android:name="com.indianlawguide.fragments.NotesFragment"
+        android:label="@string/nav_notes">
         <action
-            android:id="@+id/action_search_to_detail"
+            android:id="@+id/action_notes_to_detail"
             app:destination="@id/nav_law_detail" />
     </fragment>
 
@@ -125,10 +121,5 @@
             android:id="@+id/action_history_to_detail"
             app:destination="@id/nav_law_detail" />
     </fragment>
-
-    <fragment
-        android:id="@+id/nav_about"
-        android:name="com.indianlawguide.fragments.AboutFragment"
-        android:label="@string/setting_about" />
 
 </navigation>

@@ -32,6 +32,17 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Bottom Navigation Active Pill Indicator -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.App.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/md_theme_light_primaryContainer</item>
     </style>
 
     <!-- Splash Screen API Theme -->
@@ -47,6 +58,6 @@
     </style>
 
     <style name="ShapeAppearance.App.Button" parent="ShapeAppearance.Material3.Corner.Small">
-        <item name="cornerSize">12dp</item>
+        <item name="cornerSize">14dp</item>
     </style>
 </resources>

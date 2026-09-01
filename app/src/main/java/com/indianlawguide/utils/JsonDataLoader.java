@@ -26,16 +26,14 @@ public class JsonDataLoader {
             Gson gson = new Gson();
 
             // 1. Seed Laws
-            if (database.lawDao().getCount() == 0) {
-                InputStream isLaws = context.getAssets().open("json/laws_seed.json");
-                Type lawListType = new TypeToken<List<LawEntity>>() {}.getType();
-                List<LawEntity> laws = gson.fromJson(new InputStreamReader(isLaws, StandardCharsets.UTF_8), lawListType);
-                if (laws != null && !laws.isEmpty()) {
-                    database.lawDao().insertAll(laws);
-                    Log.d(TAG, "Seeded " + laws.size() + " laws into database.");
-                }
-                isLaws.close();
+            InputStream isLaws = context.getAssets().open("json/laws_seed.json");
+            Type lawListType = new TypeToken<List<LawEntity>>() {}.getType();
+            List<LawEntity> laws = gson.fromJson(new InputStreamReader(isLaws, StandardCharsets.UTF_8), lawListType);
+            if (laws != null && !laws.isEmpty()) {
+                database.lawDao().insertAll(laws);
+                Log.d(TAG, "Synced " + laws.size() + " laws into database.");
             }
+            isLaws.close();
 
             // 2. Seed Emergencies
             if (database.emergencyDao().getCount() == 0) {

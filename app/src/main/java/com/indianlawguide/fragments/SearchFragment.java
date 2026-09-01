@@ -22,19 +22,24 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.google.android.material.chip.Chip;
 import com.indianlawguide.R;
 import com.indianlawguide.adapters.LawCardAdapter;
+import com.indianlawguide.adapters.OnlineSearchAdapter;
 import com.indianlawguide.constants.AppConstants;
 import com.indianlawguide.database.entities.LawEntity;
 import com.indianlawguide.databinding.FragmentSearchBinding;
+import com.indianlawguide.utils.AiLegalEngine;
+import com.indianlawguide.utils.OnlineLegalSearchHelper;
 import com.indianlawguide.viewmodel.SearchViewModel;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class SearchFragment extends Fragment {
 
     private FragmentSearchBinding binding;
     private SearchViewModel viewModel;
-    private LawCardAdapter adapter;
+    private LawCardAdapter offlineAdapter;
+    private OnlineSearchAdapter onlineAdapter;
 
     private final ActivityResultLauncher<Intent> voiceLauncher = registerForActivityResult(
         new ActivityResultContracts.StartActivityForResult(),
@@ -63,7 +68,7 @@ public class SearchFragment extends Fragment {
 
         viewModel = new ViewModelProvider(this).get(SearchViewModel.class);
 
-        setupRecyclerView();
+        setupRecyclerViews();
         setupSearchInput();
         setupRecentSearches();
         setupObservers();
@@ -73,10 +78,16 @@ public class SearchFragment extends Fragment {
         }
     }
 
-    private void setupRecyclerView() {
-        adapter = new LawCardAdapter(this::onLawClicked);
-        binding.rvSearchResults.setLayoutManager(new LinearLayoutManager(requireContext()));
-        binding.rvSearchResults.setAdapter(adapter);
+    private void setupRecyclerViews() {
+        // Offline Recycler
+        offlineAdapter = new LawCardAdapter(this::onLawClicked);
+        binding.rvOfflineResults.setLayoutManager(new LinearLayoutManager(requireContext()));
+        binding.rvOfflineResults.setAdapter(offlineAdapter);
+
+        // Online Recycler
+        onlineAdapter = new OnlineSearchAdapter();
+        binding.rvOnlineResults.setLayoutManager(new LinearLayoutManager(requireContext()));
+        binding.rvOnlineResults.setAdapter(onlineAdapter);
     }
 
     private void setupSearchInput() {
@@ -86,15 +97,17 @@ public class SearchFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String query = s.toString();
+                String query = s.toString().trim();
                 binding.btnClearSearch.setVisibility(query.isEmpty() ? View.GONE : View.VISIBLE);
-                adapter.setHighlightQuery(query);
+                offlineAdapter.setHighlightQuery(query);
                 viewModel.setQuery(query);
 
                 if (query.isEmpty()) {
+                    hideAllResults();
                     loadRecentSearches();
                 } else {
                     binding.layoutRecentSearches.setVisibility(View.GONE);
+                    executeAiAndOnlineSearch(query);
                 }
             }
 
@@ -103,8 +116,67 @@ public class SearchFragment extends Fragment {
         });
 
         binding.btnClearSearch.setOnClickListener(v -> binding.etSearchInput.setText(""));
-
         binding.btnVoiceSearch.setOnClickListener(v -> startVoiceRecognition());
+    }
+
+    private void hideAllResults() {
+        binding.cardAiResponse.setVisibility(View.GONE);
+        binding.layoutOfflineSection.setVisibility(View.GONE);
+        binding.layoutOnlineSection.setVisibility(View.GONE);
+        binding.layoutEmptyResults.setVisibility(View.GONE);
+    }
+
+    private void executeAiAndOnlineSearch(String query) {
+        // 1. AI Legal Engine Summary
+        AiLegalEngine.AiResponse aiResp = AiLegalEngine.generateLegalAdvice(query);
+        if (aiResp != null) {
+            binding.cardAiResponse.setVisibility(View.VISIBLE);
+            binding.tvAiVerdict.setText(aiResp.getVerdict());
+            binding.tvAiSection.setText("• Statutory Basis: " + aiResp.getLegalSection());
+            binding.tvAiAdvice.setText(aiResp.getActionableAdvice());
+        } else {
+            binding.cardAiResponse.setVisibility(View.GONE);
+        }
+
+        // 2. Online Live Search (if connected)
+        OnlineLegalSearchHelper.searchOnline(requireContext(), query, new OnlineLegalSearchHelper.SearchCallback() {
+            @Override
+            public void onOnlineResults(List<OnlineLegalSearchHelper.OnlineLegalItem> results) {
+                if (getActivity() != null) {
+                    getActivity().runOnUiThread(() -> {
+                        if (binding != null && !binding.etSearchInput.getText().toString().trim().isEmpty()) {
+                            binding.layoutOnlineSection.setVisibility(View.VISIBLE);
+                            binding.tvOnlineStatusBadge.setText("Live Web Results (" + results.size() + ")");
+                            onlineAdapter.setItems(results);
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onOfflineMode() {
+                if (getActivity() != null) {
+                    getActivity().runOnUiThread(() -> {
+                        if (binding != null && !binding.etSearchInput.getText().toString().trim().isEmpty()) {
+                            binding.layoutOnlineSection.setVisibility(View.VISIBLE);
+                            binding.tvOnlineStatusBadge.setText("Offline Mode");
+                            List<OnlineLegalSearchHelper.OnlineLegalItem> offlineNotice = new ArrayList<>();
+                            offlineNotice.add(new OnlineLegalSearchHelper.OnlineLegalItem(
+                                "Offline Search Active",
+                                "Device is currently offline. All primary Indian laws, sections, and citizen rights are fully searchable from the local database.",
+                                ""
+                            ));
+                            onlineAdapter.setItems(offlineNotice);
+                        }
+                    });
+                }
+            }
+
+            @Override
+            public void onError(String message) {
+                // Ignore network errors gracefully
+            }
+        });
     }
 
     private void setupRecentSearches() {
@@ -147,17 +219,17 @@ public class SearchFragment extends Fragment {
         viewModel.getSearchResults().observe(getViewLifecycleOwner(), results -> {
             String query = binding.etSearchInput.getText().toString().trim();
             if (query.isEmpty()) {
-                adapter.setLaws(new ArrayList<>());
-                binding.layoutEmptyResults.setVisibility(View.GONE);
+                offlineAdapter.setLaws(new ArrayList<>());
+                binding.layoutOfflineSection.setVisibility(View.GONE);
             } else if (results != null && !results.isEmpty()) {
-                adapter.setLaws(results);
+                offlineAdapter.setLaws(results);
+                binding.layoutOfflineSection.setVisibility(View.VISIBLE);
+                binding.tvOfflineCountBadge.setText(results.size() + " Found");
                 binding.layoutEmptyResults.setVisibility(View.GONE);
-                binding.rvSearchResults.setVisibility(View.VISIBLE);
                 viewModel.saveRecentSearch(query);
             } else {
-                adapter.setLaws(new ArrayList<>());
-                binding.layoutEmptyResults.setVisibility(View.VISIBLE);
-                binding.rvSearchResults.setVisibility(View.GONE);
+                offlineAdapter.setLaws(new ArrayList<>());
+                binding.layoutOfflineSection.setVisibility(View.GONE);
             }
         });
     }

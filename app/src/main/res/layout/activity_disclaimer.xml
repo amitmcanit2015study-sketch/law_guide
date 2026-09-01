@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="?android:attr/colorBackground"
-    android:padding="24dp">
+    android:padding="20dp">
 
     <ScrollView
         android:id="@+id/scrollDisclaimer"
@@ -22,13 +23,13 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingTop="32dp"
+            android:paddingTop="16dp"
             android:paddingBottom="16dp">
 
             <ImageView
                 android:id="@+id/imgLogo"
-                android:layout_width="88dp"
-                android:layout_height="88dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_ashoka_pillar" />
 
@@ -36,11 +37,11 @@
                 android:id="@+id/tvAppName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/app_name"
                 android:textColor="?attr/colorPrimary"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -56,7 +57,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 app:cardBackgroundColor="?attr/colorSurfaceVariant"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
@@ -104,6 +105,15 @@
                         android:textColor="?attr/colorOnSurface"
                         android:textSize="14sp" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4sp"
+                        android:text="@string/app_data_sources"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="12sp" />
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
@@ -112,11 +122,12 @@
 
     </ScrollView>
 
-    <com.google.android.material.checkbox.MaterialCheckBox
+    <CheckBox
         android:id="@+id/checkboxUnderstand"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
+        android:buttonTint="?attr/colorPrimary"
         android:text="@string/disclaimer_checkbox"
         android:textColor="?attr/colorOnSurface"
         android:textSize="13sp"
@@ -126,14 +137,13 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnContinue"
+        style="@style/Widget.Material3.Button"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
         android:enabled="false"
         android:text="@string/btn_continue"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:cornerRadius="14dp"
+        android:textSize="15sp"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
