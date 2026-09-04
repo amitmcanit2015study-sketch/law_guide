@@ -4,6 +4,13 @@
     <string name="app_header_subtitle">द्वारा अमित भारत</string>
     <string name="tagline">अपने अधिकार जानें • हर भारतीय के लिए ऑफलाइन कानूनी गाइड</string>
     <string name="splash_developed_by">अमित भारत द्वारा विकसित</string>
+    <string name="action_about">ऐप के बारे में</string>
+    <string name="developed_by_full">डेवलपर: अमित भारत</string>
+    <string name="company_name_full">कंपनी: रूय्स सॉफ्ट टेक</string>
+    <string name="share_app">ऐप साझा करें</string>
+    <string name="download_apk">डाउनलोड APK</string>
+    <string name="send_feedback">प्रतिक्रिया भेजें</string>
+    <string name="about_footer">100% ऑफलाइन • विज्ञापन-मुक्त • कोई ट्रैकिंग नहीं</string>
     <string name="tap_to_read_more">पूरा विवरण पढ़ने के लिए टैप करें →</string>
     <string name="daily_law_tag">आज का कानून</string>
     <string name="category_laws_title">%s कानून</string>
